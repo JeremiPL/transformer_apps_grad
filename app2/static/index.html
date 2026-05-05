@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Endpoint Comparison</title>
+	<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+	<main class="container">
+		<h1>Ask The Model</h1>
+		<form id="prompt-form" class="prompt-form">
+			<label for="prompt">Your text</label>
+			<textarea id="prompt" name="prompt" rows="6" required placeholder="Type your text here..."></textarea>
+			<button type="submit" id="submit-btn">Submit</button>
+		</form>
+
+		<p id="status" class="status" aria-live="polite"></p>
+		<section class="responses-grid">
+			<section class="response-section">
+				<h2>Response: Without Tool</h2>
+				<pre id="response-without" class="response-output"></pre>
+			</section>
+			<section class="response-section">
+				<h2>Response: With Tool</h2>
+				<pre id="response-with" class="response-output"></pre>
+			</section>
+		</section>
+	</main>
+
+	<script src="/script.js" defer></script>
+</body>
+</html>

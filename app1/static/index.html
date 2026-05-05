@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Model Response</title>
+	<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+	<main class="container">
+		<h1>Model Response Demo</h1>
+		<form id="prompt-form" class="prompt-form">
+			<label for="prompt">Enter text</label>
+			<textarea id="prompt" name="prompt" rows="6" required placeholder="Type something and click Submit..."></textarea>
+			<button type="submit" id="submit-btn">Submit</button>
+		</form>
+
+		<p id="status" class="status" aria-live="polite"></p>
+		<section class="response-section">
+			<h2>Response</h2>
+			<pre id="response" class="response-output"></pre>
+		</section>
+	</main>
+
+	<script src="/script.js" defer></script>
+</body>
+</html>

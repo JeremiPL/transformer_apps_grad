@@ -1,0 +1,86 @@
+:root {
+	color-scheme: light;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	margin: 0;
+	background: #f7f8fb;
+	color: #222;
+}
+
+.container {
+	max-width: 640px;
+	margin: 3rem auto;
+	padding: 1.5rem;
+	background: #fff;
+	border: 1px solid #e6e8ef;
+	border-radius: 12px;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+.prompt-form {
+	display: grid;
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+label {
+	font-weight: 600;
+}
+
+textarea {
+	width: 100%;
+	resize: vertical;
+	padding: 0.75rem;
+	font: inherit;
+	border: 1px solid #ccd2df;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+button {
+	width: fit-content;
+	padding: 0.6rem 1rem;
+	font: inherit;
+	font-weight: 600;
+	color: #fff;
+	background: #2463eb;
+	border: 0;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.status {
+	margin: 0.25rem 0 1rem;
+	color: #666;
+}
+
+.response-section {
+	display: grid;
+	gap: 0.5rem;
+}
+
+.response-output {
+	margin: 0;
+	padding: 0.75rem;
+	min-height: 3.25rem;
+	border: 1px solid #e1e5f0;
+	border-radius: 8px;
+	background: #fafbff;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
